@@ -1,0 +1,152 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+  font: 400 15px "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#header {
+  padding: 1em 3em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+#header a, #header p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #004241;
+}
+
+#header a {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+#header a:hover {
+  font-weight: 700;
+}
+
+.wrapper {
+  padding: 2em;
+}
+
+.item-wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.cards {
+  padding: 3em;
+}
+
+.cards p {
+  margin-bottom: 4em;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7em;
+}
+
+.card1 {
+  border-radius: 0.5em;
+  background-color: #e38826;
+}
+
+.card2 {
+  border-radius: 0.5em;
+  background-color: #006970;
+}
+
+.card3 {
+  border-radius: 0.5em;
+  background-color: #004241;
+}
+
+.btn1, .btn2, .btn3 {
+  margin: 1.5em auto;
+  padding: 1em 2em;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 2em;
+  background: #f2f2f2;
+}
+
+.btn1 {
+  color: #e38826;
+}
+
+.btn2 {
+  color: #006970;
+}
+
+.btn3 {
+  color: #004241;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  background: none;
+}
+
+@media only screen and (min-width: 560px) {
+  .item-wrapper {
+    width: 60em;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
+  .wrapper {
+    padding: 10em;
+  }
+  .card1 {
+    border-radius: 0.5em 0 0 0.5em;
+  }
+  .card2 {
+    border-radius: 0;
+  }
+  .card3 {
+    border-radius: 0 0.5em 0.5em 0;
+  }
+}
+/*# sourceMappingURL=flex-main.css.map */

@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  font: 400 15px "Lexend Deca", sans-serif;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#header{
+  padding: 1em 3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  background-color: #fff;
+  
+  a, p{
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: hsl(179, 100%, 13%);
+      }
+
+  a{
+    display: inline-block;
+    margin: 1em 0;
+  }
+
+  a:hover{
+      font-weight: 700;
+    }
+}
+
+.wrapper{
+  padding: 2em;
+}
+
+.item-wrapper{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.cards{
+  padding: 3em;
+
+  p{
+    margin-bottom: 4em;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7em;
+  }
+}
+
+.card1{
+  border-radius: 0.5em;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card2{
+  border-radius: 0.5em;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card3{
+  border-radius: 0.5em;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.btn1, .btn2, .btn3{
+  margin: 1.5em auto;
+  padding: 1em 2em;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 2em;
+  background: hsl(0, 0%, 95%);
+}
+
+.btn1{
+  color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+  color: hsl(184, 100%, 22%);
+}
+
+.btn3{
+  color: hsl(179, 100%, 13%);
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover{
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background: none;
+}
+
+@media only screen and (min-width: 560px) {
+  .item-wrapper{
+    width: 60em;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  .wrapper{
+    padding: 10em;
+  }
+
+  .card1{
+    border-radius: 0.5em 0 0 0.5em;
+  }
+
+  .card2{
+    border-radius: 0;
+  }
+
+  .card3{
+    border-radius: 0 0.5em 0.5em 0;
+  }
+}
